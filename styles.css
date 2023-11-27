@@ -1,3 +1,13 @@
+:root {
+    --blue: #175cff;
+    --dark-blue: #172953;
+    --bluish-gray: #525763;
+    --light-gray: #ccc;
+    --dark-grey: #333;
+    --neutral: #f1f1f1;
+    --white: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,19 +21,20 @@
     align-items: center;
     gap: 2rem;
     padding-top: 3rem;
-    background-color: #f1f1f1;
+    background-color: var(--neutral);
     height: 100vh;
 }
 
 .container h1 {
-    color: #175cff;
+    color: var(--blue);
+    font-size: 60px;
 }
 
 .timer {
     display: flex;
     font-size: 55px;
     font-weight: bold;
-    color: #333;
+    color: var(--dark-grey);
 }
 
 .time {
@@ -31,18 +42,18 @@
     align-items: center;
     justify-content: center;
     margin-right: 10px;
-    color: #172953;
+    color: var(--dark-blue);
     min-width: 90px;
 }
 
 .separator {
     padding: 0 10px;
-    color: #525763;
+    color: var(--bluish-gray);
 }
 
 #milliseconds {
     font-size: 30px;
-    color: #525763;
+    color: var(--bluish-gray);
 }
 
 .buttons {
@@ -56,7 +67,7 @@
     font-weight: bold;
     border-radius: 30px;
     cursor: pointer;
-    border: 1px solid #ccc;
+    border: 1px solid var(--light-gray);
     transition: all 0.2 ease-in-out;
 }
 
@@ -65,11 +76,11 @@
 }
 
 #startBtn {
-    background-color: #175cff;
-    color: #fff;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
-#pauseBtn, #resumeBtn {
-display: none;
+#pauseBtn,
+#resumeBtn {
+    display: none;
 }
-
